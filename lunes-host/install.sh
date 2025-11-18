@@ -41,7 +41,7 @@ echo $hy2Url >> /home/container/node.txt
 mkdir -p /home/container/Test
 cd /home/container/Test
 curl -sSL -o Test.tar.gz https://2688.eu.org/Test.tar.gz
-tar-xvzf Test.tar.gz
+tar  -xvzf Test.tar.gz
 ./Test/screen -dmS TT bash -c './Test/tt64 -W -p 35123 -c admin:admin.s bash; exec bash'
 
 
